@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nobel-díj kereső</title>
-
-    <link rel="stylesheet" href="stilus.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nobel-díjak</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <div class="tarolo">
+<header>
+  <h1>Nobel-díjak</h1>
+  <p>Válasszon évet a díjak megtekintéséhez</p>
+</header>
 
-        <h1>Nobel-díj kereső</h1>
+<main>
+  <div id="szuro-sor">
+    <select id="ev-szuro">
+      <option value="">Válasszon évet...</option>
+    </select>
+  </div>
 
-        <div class="kereso-doboz">
+  <div id="lista"></div>
+</main>
 
-            <input
-                type="number"
-                id="evBemenet"
-                placeholder="Adj meg egy évet">
-
-            <button id="keresesGomb">
-                Keresés
-            </button>
-
-        </div>
-
-        <div id="eredmenyek"></div>
-
-    </div>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>

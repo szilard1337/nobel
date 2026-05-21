@@ -103,14 +103,3 @@ main {
   color: #888;
   font-size: 14px;
 }
-
-.spinner {
-  display: inline-block;
-  width: 20px; height: 20px;
-  border: 2px solid #ccc;
-  border-top-color: #555;
-  border-radius: 50%;
-  animation: forog 0.7s linear infinite;
-  vertical-align: middle;
-  margin-right: 8px;
-}

@@ -23,7 +23,7 @@ async function mindentBetolt() {
   }
 
   evSzuroFeltolt();
-  uzenetMutat("Válasszon évet a fenti legördülő menüből.");
+  uzenetMutat("Válassz évet a fenti legördülő menüből.");
 }
 
 function evSzuroFeltolt() {

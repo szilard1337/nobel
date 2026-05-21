@@ -1,10 +1,10 @@
 const KATEGORIA_NEVEK = {
-  "Physics":                "Fizika",
-  "Chemistry":              "Kémia",
+  "Physics": "Fizika",
+  "Chemistry": "Kémia",
   "Physiology or Medicine": "Orvostudomány",
-  "Literature":             "Irodalom",
-  "Peace":                  "Béke",
-  "Economic Sciences":      "Közgazdaságtan"
+  "Literature": "Irodalom",
+  "Peace": "Béke",
+  "Economic Sciences": "Közgazdaságtan"
 };
 
 let osszesDij = [];
@@ -44,7 +44,7 @@ function evDijaiMutat(ev) {
   osszesDij.filter(d => d.awardYear === ev).forEach(dij => {
     const kategoria = KATEGORIA_NEVEK[dij.category?.en] || dij.category?.en || "Ismeretlen";
     const motivacio = dij.laureates?.[0]?.motivation?.en || "";
-    const dijOsszeg = dij.prizeAmount ? dij.prizeAmount.toLocaleString("hu-HU") + " SEK" : "";
+    const dijOsszeg = dij.prizeAmount * 300 + " " + "HUF";
     const dijazottak = (dij.laureates || [])
       .map(l => `<span class="dijazott">${l.knownName?.en || l.orgName?.en || "Ismeretlen"}</span>`)
       .join("");
